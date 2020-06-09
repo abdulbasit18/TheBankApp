@@ -2,8 +2,8 @@
 //  AlertPresentable+Extension.swift
 //  TheMovieDB
 //
-//  Created by Osama Bashir on 11/30/19.
-//  Copyright © 2019 Osama Bashir. All rights reserved.
+//  Created by Abdul Basit on 11/30/19.
+//  Copyright © 2019 Abdul Basit. All rights reserved.
 //
 
 import UIKit
