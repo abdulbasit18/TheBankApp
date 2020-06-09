@@ -1,0 +1,194 @@
+{
+   "code":"OK",
+   "data":{
+      "page":0,
+      "pageCount":6742,
+      "bics":[
+         {
+            "id":"1",
+            "countryId":"20",
+            "bankName":"Bank of Albania",
+            "location":"1001 Tirana",
+            "blz":"10111008",
+            "bicCode":"STANALTR",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"2",
+            "countryId":"20",
+            "bankName":"Bank of Albania",
+            "location":"1001 Tirana",
+            "blz":"10111015",
+            "bicCode":"STANALTR",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"3",
+            "countryId":"20",
+            "bankName":"Bank of Albania",
+            "location":"9001 Lushnje",
+            "blz":"10122008",
+            "bicCode":"STANALTR",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"4",
+            "countryId":"20",
+            "bankName":"Bank of Albania",
+            "location":"3001 Elbasan",
+            "blz":"10131006",
+            "bicCode":"STANALTR",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"5",
+            "countryId":"20",
+            "bankName":"Bank of Albania",
+            "location":"7001 Korce",
+            "blz":"10141005",
+            "bicCode":"STANALTR",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"6",
+            "countryId":"20",
+            "bankName":"Bank of Albania",
+            "location":"4001 Shkoder",
+            "blz":"10151004",
+            "bicCode":"STANALTR",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"7",
+            "countryId":"20",
+            "bankName":"Bank of Albania",
+            "location":"6001 Gjirokaster",
+            "blz":"10161003",
+            "bicCode":"STANALTR",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"8",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"10 01 Tirana",
+            "blz":"20211006",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"9",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"1001 Tirana",
+            "blz":"20211013",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"10",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"1001 Tirana",
+            "blz":"20211020",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"11",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"1010 Tirana",
+            "blz":"20211037",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"12",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"1016 Tirana",
+            "blz":"20211044",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"13",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"1001 Tirana",
+            "blz":"20211051",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"14",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"1001 Tirana",
+            "blz":"20211068",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         },
+         {
+            "id":"15",
+            "countryId":"20",
+            "bankName":"Raiffeisen Bank sh.a",
+            "location":"1027 Tirana",
+            "blz":"20211075",
+            "bicCode":"SGSBALTX",
+            "bicCodeOther":[
+
+            ],
+            "countryCode":"AL"
+         }
+      ],
+      "location":"",
+      "bankName":"",
+      "countryCode":"",
+      "blz":"",
+      "bic":""
+   }
+}
