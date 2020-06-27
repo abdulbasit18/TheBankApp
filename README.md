@@ -28,7 +28,7 @@ RxSwift is a framework for interacting with the Swift programming language, whil
 
 ReactiveX frameworks provide a common vocabulary for tasks used repeatedly across different programming languages. This makes it easy to focus on the syntax of the language itself rather than figuring out how to map a common task to each new language.
 
-## RxSwift 
+## SnapKit 
 Simple & Expressive chaining DSL allows building constraints with minimal amounts of code while ensuring they are easy to read and understand.
 Type Safe by design to reduce programmer error and keep invalid constraints from being created in the first place for maximized productivity.
 
