@@ -12,6 +12,8 @@ App consists of 3 screens:
 Networking is abstracted in a protocol - ```NetworkService```.
 * ```BasicNetworkServiceImpl``` - regular API client.
 
+## Unit/UI Testing 
+
 Unit/UI Testing with coverage upto 80%
 For Running tests successfully go to file ```SnapShotTestsConfiguration``` and turn on the property ```recordMode```
 Run Tests it will fail and run tets again after turning off ```recordMode``` 
