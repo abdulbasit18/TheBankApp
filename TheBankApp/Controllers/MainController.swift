@@ -121,7 +121,7 @@ final class MainController: BaseViewController {
         tableView.dataSource = nil
         tableView.delegate = nil
 
-        viewModel.outputs.tableData.asObservable()
+        viewModel.outputs.sourceData.asObservable()
             .bind(to: self.tableView.rx.items) { _, _, model in
                 let cell = self.tableView.dequeueReusableCell(withIdentifier: "SearchBic") as? BicsTableViewCell
                 cell?.configureWith(model)
@@ -129,14 +129,14 @@ final class MainController: BaseViewController {
         }.disposed(by: self.disposeBag)
         
         tableView.rx.reachedBottom.asObservable()
-            .bind(to: viewModel.inputs.reachedBottomTrigger)
+            .bind(to: viewModel.inputs.reachedBottomSubject)
             .disposed(by: disposeBag)
         
-        viewModel.isLoading
+        viewModel.outputs.isLoadingSubject
             .bind(to: indicator.rx.isAnimating)
             .disposed(by: disposeBag)
         
-        viewModel.isLoading.subscribe { [weak self] (event) in
+        viewModel.outputs.isLoadingSubject.subscribe { [weak self] (event) in
             guard let self = self else {return}
             if self.tableView.visibleCells.isEmpty {
                 (event.element ?? false) ? self.startAnimating() : self.stopAnimating()
@@ -145,7 +145,7 @@ final class MainController: BaseViewController {
         
         filterBarButton?.rx.tap
             .bind {[weak self] in
-                self?.viewModel.inputs.searchButtonActionSubject.onNext(0)}
+                self?.viewModel.inputs.searchActionSubject.onNext(0)}
             .disposed(by: disposeBag)
         
         validationBarButton?.rx.tap
@@ -153,9 +153,9 @@ final class MainController: BaseViewController {
                 self?.viewModel.inputs.validationSelectedSubject.onNext(0)}
             .disposed(by: disposeBag)
         
-        viewModel.searchSubject.onNext(FilterModel())
+        viewModel.inputs.searchSubject.onNext(FilterModel())
         
-        viewModel.errorSubject
+        viewModel.outputs.errorSubject
             .subscribe(onNext: { [weak self] (errorString) in
                 self?.showAlert(with: "Error", and: errorString)
             }).disposed(by: disposeBag)

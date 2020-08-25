@@ -8,7 +8,7 @@
 
 import RxSwift
 
-protocol SearchViewModelType {
+protocol SearchViewModelType: class {
     var searchSelected: BehaviorSubject<FilterModel?> { get }
 }
 

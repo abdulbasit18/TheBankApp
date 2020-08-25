@@ -9,14 +9,14 @@
 import RxSwift
 
 // MARK: - Inputs Protocol
-protocol ValidationViewModelInputs {
+protocol ValidationViewModelInputs: class {
     var bicValidationSelected: PublishSubject<String?> { get }
     var ibanValidationSelected: PublishSubject<String?> { get }
     var postCodeValidationSelected: PublishSubject<DoubleFieldModel?> { get }
 }
 
 // MARK: - Outputs Protocol
-protocol ValidationViewModelOutputs {
+protocol ValidationViewModelOutputs: class {
     var bicDataSubject: BehaviorSubject<ValidationStatus> { get }
     var ibanDataSubject: BehaviorSubject<ValidationStatus> { get }
     var postDataSubject: BehaviorSubject<ValidationStatus> { get }

@@ -6,8 +6,4 @@
 //  Copyright © 2020 Abdul Basit. All rights reserved.
 //
 
-enum ValidationStatus {
-    case success
-    case failure
-    case unknown
-}
+

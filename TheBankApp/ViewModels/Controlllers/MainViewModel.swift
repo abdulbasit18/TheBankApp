@@ -11,21 +11,19 @@ import RxCocoa
 
 // MARK: - Inputs Protocol
 
-protocol MainViewModelInputs {
-    var searchButtonActionSubject: PublishSubject<Any> { get }
+protocol MainViewModelInputs: class {
+    var searchActionSubject: PublishSubject<Any> { get }
     var validationSelectedSubject: PublishSubject<Any> { get }
-    var reachedBottomTrigger: PublishSubject<Void> { get }
+    var reachedBottomSubject: PublishSubject<Void> { get }
     var searchSubject: BehaviorSubject<FilterModel?> { get }
 }
 
 // MARK: - Outputs Protocol
 
-protocol MainViewModelOutputs {
-    var isLoading: PublishSubject<Bool> { get }
-    var tableData: BehaviorRelay<[BicModel]> { get }
+protocol MainViewModelOutputs: class {
+    var isLoadingSubject: PublishSubject<Bool> { get }
+    var sourceData: BehaviorRelay<[BicModel]> { get }
     var errorSubject: PublishSubject<String> { get }
-    var searchPersistentData: FilterModel? { get }
-    var page: Int { get }
 }
 
 // MARK: - Main Protocol
@@ -44,41 +42,51 @@ final class MainViewModel: MainViewModelType {
     
     // MARK: - Inputs
     
-    let reachedBottomTrigger = PublishSubject<Void>()
-    var searchButtonActionSubject = PublishSubject<Any>()
+    let reachedBottomSubject = PublishSubject<Void>()
+    var searchActionSubject = PublishSubject<Any>()
     var validationSelectedSubject = PublishSubject<Any>()
     var searchSubject = BehaviorSubject<FilterModel?>(value: nil)
     
     // MARK: - Outputs
-    var isLoading = PublishSubject<Bool>()
+    var isLoadingSubject = PublishSubject<Bool>()
     var errorSubject = PublishSubject<String>()
-    var tableData = BehaviorRelay<[BicModel]>(value: [])
-    var searchPersistentData: FilterModel?
-    var page = 0
+    var sourceData = BehaviorRelay<[BicModel]>(value: [])
     
     // MARK: - Private Properties
     
     private let service: NetworkService
+    private let navigationDelegate: NavigationDelegate
     private let disposeBag = DisposeBag()
+    private var searchPersistentData: FilterModel?
+    private var page = 0
     
     // MARK: - Init 
     init(_ service: NetworkService, navigationDelegate: NavigationDelegate) {
         self.service = service
+        self.navigationDelegate = navigationDelegate
         
-        searchButtonActionSubject
+        //Setup RxBindings
+        setupBindings()
+    }
+    
+    // MARK: - Bindings
+    
+    private func setupBindings() {
+        
+        inputs.searchActionSubject
             .subscribe { [weak self] (_) in
                 guard let  self = self else {return}
-                navigationDelegate.filterSelected(searchAction: self.searchSubject)
+                self.navigationDelegate.filterSelected(searchAction: self.searchSubject)
         }
         .disposed(by: disposeBag)
         
-        validationSelectedSubject
-            .subscribe { (_) in
-                navigationDelegate.validationSelected()
+        inputs.validationSelectedSubject
+            .subscribe { [weak self] (_) in
+                self?.navigationDelegate.validationSelected()
         }
         .disposed(by: disposeBag)
         
-        reachedBottomTrigger
+        inputs.reachedBottomSubject
             .debounce(.milliseconds(100), scheduler: MainScheduler.instance)
             .subscribe { [weak self ] (_) in
                 guard let  self = self else {return}
@@ -87,20 +95,22 @@ final class MainViewModel: MainViewModelType {
         }
         .disposed(by: disposeBag)
         
-        searchSubject
+        inputs.searchSubject
             .compactMap {$0}
             .subscribe { [weak self] (searchModel) in
                 guard let  self = self else {return}
                 self.searchPersistentData = searchModel.element
-                self.tableData.accept([])
+                self.sourceData.accept([])
+                self.page = 0
                 self.fetchBics()
         }
         .disposed(by: disposeBag)
+        
     }
     
     // MARK: - Service Call
     func fetchBics(page: Int = 0) {
-        isLoading.onNext(true)
+        outputs.isLoadingSubject.onNext(true)
         service
             .load(SingleItemResource<SearchBicModel>(action:
                 SearchBicAction.search(page: "\(page)",
@@ -108,18 +118,18 @@ final class MainViewModel: MainViewModelType {
             .flatMap(ignoreNil)
             .map({ [weak self] (model) -> [BicModel] in
                 guard let  self = self else {return []}
-                self.isLoading.onNext(false)
-                let data = self.tableData.value
+                self.outputs.isLoadingSubject.onNext(false)
+                let data = self.outputs.sourceData.value
                 let bics =  data + (model.data?.bics?.compactMap {$0} ?? [])
                 return (bics)
             })
             .subscribe(onNext: { [weak self] (bics) in
                 guard let  self = self else {return }
-                self.tableData.accept(bics)
+                self.outputs.sourceData.accept(bics)
                 }, onError: { [weak self] (error) in
                     guard let  self = self else {return }
-                    self.isLoading.onNext(false)
-                    self.errorSubject.onNext(error.localizedDescription)
+                    self.outputs.isLoadingSubject.onNext(false)
+                    self.outputs.errorSubject.onNext(error.localizedDescription)
             })
             .disposed(by: disposeBag)
     }

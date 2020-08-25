@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'TheBankApp' do
+target 'BankApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -13,8 +13,10 @@ target 'TheBankApp' do
    pod 'SnapKit'
    pod 'IQKeyboardManagerSwift'
    pod 'NVActivityIndicatorView'
+   pod 'Swinject'
+   pod 'SwinjectAutoregistration'
 
-  target 'TheBankAppTests' do
+  target 'BankAppTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'RxTest'
