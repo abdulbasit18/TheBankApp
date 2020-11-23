@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201FA9F0AE46348E0AA1C923 /* Pods_TheBankApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC756CF577DCBCCA51DD8B7 /* Pods_TheBankApp.framework */; };
+		6E107BF4DE3F49BA21C34FEE /* Pods_TheBankAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B240CAAA406380EB8CCD36 /* Pods_TheBankAppTests.framework */; };
 		6EB9353D24D4034500D9554A /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9353C24D4034500D9554A /* SearchCoordinator.swift */; };
 		6EB9353F24D4035300D9554A /* ValidationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9353E24D4035300D9554A /* ValidationCoordinator.swift */; };
 		6EB9355324D4952800D9554A /* Bics.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6EB9355224D4952800D9554A /* Bics.geojson */; };
@@ -70,8 +72,6 @@
 		6EE046B724D379E1006B972E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE046B624D379E1006B972E /* SearchViewController.swift */; };
 		6EE046BE24D37C57006B972E /* ValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE046BD24D37C57006B972E /* ValidationViewModel.swift */; };
 		6EE046C024D37C9A006B972E /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE046BF24D37C9A006B972E /* ValidationViewController.swift */; };
-		ACB2FFE7B2892F2D4C04549D /* Pods_Alzura_CodeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D974F9CD12881BF110FD2A8F /* Pods_Alzura_CodeTask.framework */; };
-		F5B3F539ADFC5B534DD02DBC /* Pods_Alzura_CodeTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86F02C27D2F03F50CE7DAFF /* Pods_Alzura_CodeTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +85,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220F004524FBED9499286A33 /* Pods-TheBankApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBankApp.debug.xcconfig"; path = "Target Support Files/Pods-TheBankApp/Pods-TheBankApp.debug.xcconfig"; sourceTree = "<group>"; };
+		261DC03D97112E446A2831D0 /* Pods-TheBankAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBankAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TheBankAppTests/Pods-TheBankAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53B240CAAA406380EB8CCD36 /* Pods_TheBankAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBankAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7D9A25E32CE4CEECB29FAD /* Pods-Alzura-CodeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzura-CodeTask.release.xcconfig"; path = "Target Support Files/Pods-Alzura-CodeTask/Pods-Alzura-CodeTask.release.xcconfig"; sourceTree = "<group>"; };
 		6EB9353C24D4034500D9554A /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		6EB9353E24D4035300D9554A /* ValidationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationCoordinator.swift; sourceTree = "<group>"; };
@@ -100,12 +103,12 @@
 		6EB9356324D49FE600D9554A /* MainSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSnapShotTests.swift; sourceTree = "<group>"; };
 		6EB9356524D4A0B800D9554A /* ValidationSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSnapShotTests.swift; sourceTree = "<group>"; };
 		6EB9356724D4A0EF00D9554A /* SearchSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSnapShotTests.swift; sourceTree = "<group>"; };
-		6EE0460B24D2EF08006B972E /* Alzura-CodeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alzura-CodeTask.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE0460B24D2EF08006B972E /* TheBankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE0460E24D2EF08006B972E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EE0461A24D2EF0D006B972E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EE0461D24D2EF0D006B972E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EE0461F24D2EF0D006B972E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EE0462424D2EF0D006B972E /* Alzura-CodeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alzura-CodeTaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE0462424D2EF0D006B972E /* TheBankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE0462A24D2EF0D006B972E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EE0464A24D2FF74006B972E /* APIAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAction.swift; sourceTree = "<group>"; };
 		6EE0464D24D2FF98006B972E /* SearchBicAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBicAction.swift; sourceTree = "<group>"; };
@@ -154,11 +157,12 @@
 		6EE046B624D379E1006B972E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6EE046BD24D37C57006B972E /* ValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewModel.swift; sourceTree = "<group>"; };
 		6EE046BF24D37C9A006B972E /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
+		6F99B95020337EC758340D13 /* Pods-TheBankAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBankAppTests.release.xcconfig"; path = "Target Support Files/Pods-TheBankAppTests/Pods-TheBankAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7BC756CF577DCBCCA51DD8B7 /* Pods_TheBankApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheBankApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80219C7745207C2680E384AD /* Pods-Alzura-CodeTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzura-CodeTaskTests.release.xcconfig"; path = "Target Support Files/Pods-Alzura-CodeTaskTests/Pods-Alzura-CodeTaskTests.release.xcconfig"; sourceTree = "<group>"; };
-		A86F02C27D2F03F50CE7DAFF /* Pods_Alzura_CodeTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alzura_CodeTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6CCD18A6399F08A2B990D9 /* Pods-TheBankApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBankApp.release.xcconfig"; path = "Target Support Files/Pods-TheBankApp/Pods-TheBankApp.release.xcconfig"; sourceTree = "<group>"; };
 		B281CBC35F0CB68497AA7890 /* Pods-Alzura-CodeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzura-CodeTask.debug.xcconfig"; path = "Target Support Files/Pods-Alzura-CodeTask/Pods-Alzura-CodeTask.debug.xcconfig"; sourceTree = "<group>"; };
 		D482353EA93C1630C5DC61DA /* Pods-Alzura-CodeTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzura-CodeTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Alzura-CodeTaskTests/Pods-Alzura-CodeTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D974F9CD12881BF110FD2A8F /* Pods_Alzura_CodeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alzura_CodeTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB2FFE7B2892F2D4C04549D /* Pods_Alzura_CodeTask.framework in Frameworks */,
+				201FA9F0AE46348E0AA1C923 /* Pods_TheBankApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B3F539ADFC5B534DD02DBC /* Pods_Alzura_CodeTaskTests.framework in Frameworks */,
+				6E107BF4DE3F49BA21C34FEE /* Pods_TheBankAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +341,8 @@
 		6EE0460224D2EF08006B972E = {
 			isa = PBXGroup;
 			children = (
-				6EE0460D24D2EF08006B972E /* Alzura-CodeTask */,
-				6EE0462724D2EF0D006B972E /* Alzura-CodeTaskTests */,
+				6EE0460D24D2EF08006B972E /* TheBankApp */,
+				6EE0462724D2EF0D006B972E /* TheBankAppTests */,
 				6EE0460C24D2EF08006B972E /* Products */,
 				C07D21A8EA57EE952F5FFEA5 /* Pods */,
 				9635DCFD31A6FFE82AF995FB /* Frameworks */,
@@ -348,13 +352,13 @@
 		6EE0460C24D2EF08006B972E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6EE0460B24D2EF08006B972E /* Alzura-CodeTask.app */,
-				6EE0462424D2EF0D006B972E /* Alzura-CodeTaskTests.xctest */,
+				6EE0460B24D2EF08006B972E /* TheBankApp.app */,
+				6EE0462424D2EF0D006B972E /* TheBankAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6EE0460D24D2EF08006B972E /* Alzura-CodeTask */ = {
+		6EE0460D24D2EF08006B972E /* TheBankApp */ = {
 			isa = PBXGroup;
 			children = (
 				6EE0463524D2F1B8006B972E /* AppStartup */,
@@ -365,10 +369,10 @@
 				6EE0463E24D2F294006B972E /* Features */,
 				6EE0463724D2F1FB006B972E /* Resources */,
 			);
-			path = "Alzura-CodeTask";
+			path = TheBankApp;
 			sourceTree = "<group>";
 		};
-		6EE0462724D2EF0D006B972E /* Alzura-CodeTaskTests */ = {
+		6EE0462724D2EF0D006B972E /* TheBankAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				6EB9354024D493A400D9554A /* MailList */,
@@ -376,7 +380,7 @@
 				6EB9354224D493B900D9554A /* Search */,
 				6EE0462A24D2EF0D006B972E /* Info.plist */,
 			);
-			path = "Alzura-CodeTaskTests";
+			path = TheBankAppTests;
 			sourceTree = "<group>";
 		};
 		6EE0463524D2F1B8006B972E /* AppStartup */ = {
@@ -732,8 +736,8 @@
 		9635DCFD31A6FFE82AF995FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D974F9CD12881BF110FD2A8F /* Pods_Alzura_CodeTask.framework */,
-				A86F02C27D2F03F50CE7DAFF /* Pods_Alzura_CodeTaskTests.framework */,
+				7BC756CF577DCBCCA51DD8B7 /* Pods_TheBankApp.framework */,
+				53B240CAAA406380EB8CCD36 /* Pods_TheBankAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -745,6 +749,10 @@
 				6A7D9A25E32CE4CEECB29FAD /* Pods-Alzura-CodeTask.release.xcconfig */,
 				D482353EA93C1630C5DC61DA /* Pods-Alzura-CodeTaskTests.debug.xcconfig */,
 				80219C7745207C2680E384AD /* Pods-Alzura-CodeTaskTests.release.xcconfig */,
+				220F004524FBED9499286A33 /* Pods-TheBankApp.debug.xcconfig */,
+				8B6CCD18A6399F08A2B990D9 /* Pods-TheBankApp.release.xcconfig */,
+				261DC03D97112E446A2831D0 /* Pods-TheBankAppTests.debug.xcconfig */,
+				6F99B95020337EC758340D13 /* Pods-TheBankAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -752,9 +760,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6EE0460A24D2EF08006B972E /* Alzura-CodeTask */ = {
+		6EE0460A24D2EF08006B972E /* TheBankApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6EE0462D24D2EF0D006B972E /* Build configuration list for PBXNativeTarget "Alzura-CodeTask" */;
+			buildConfigurationList = 6EE0462D24D2EF0D006B972E /* Build configuration list for PBXNativeTarget "TheBankApp" */;
 			buildPhases = (
 				BDD00019B60070AB3C6CA756 /* [CP] Check Pods Manifest.lock */,
 				6EE0460724D2EF08006B972E /* Sources */,
@@ -767,14 +775,14 @@
 			);
 			dependencies = (
 			);
-			name = "Alzura-CodeTask";
+			name = TheBankApp;
 			productName = "Alzura-CodeTask";
-			productReference = 6EE0460B24D2EF08006B972E /* Alzura-CodeTask.app */;
+			productReference = 6EE0460B24D2EF08006B972E /* TheBankApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6EE0462324D2EF0D006B972E /* Alzura-CodeTaskTests */ = {
+		6EE0462324D2EF0D006B972E /* TheBankAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6EE0463024D2EF0D006B972E /* Build configuration list for PBXNativeTarget "Alzura-CodeTaskTests" */;
+			buildConfigurationList = 6EE0463024D2EF0D006B972E /* Build configuration list for PBXNativeTarget "TheBankAppTests" */;
 			buildPhases = (
 				3F86C3B0C010323810A6C099 /* [CP] Check Pods Manifest.lock */,
 				6EE0462024D2EF0D006B972E /* Sources */,
@@ -787,9 +795,9 @@
 			dependencies = (
 				6EE0462624D2EF0D006B972E /* PBXTargetDependency */,
 			);
-			name = "Alzura-CodeTaskTests";
+			name = TheBankAppTests;
 			productName = "Alzura-CodeTaskTests";
-			productReference = 6EE0462424D2EF0D006B972E /* Alzura-CodeTaskTests.xctest */;
+			productReference = 6EE0462424D2EF0D006B972E /* TheBankAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -812,7 +820,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6EE0460624D2EF08006B972E /* Build configuration list for PBXProject "Alzura-CodeTask" */;
+			buildConfigurationList = 6EE0460624D2EF08006B972E /* Build configuration list for PBXProject "TheBankApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -825,8 +833,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6EE0460A24D2EF08006B972E /* Alzura-CodeTask */,
-				6EE0462324D2EF0D006B972E /* Alzura-CodeTaskTests */,
+				6EE0460A24D2EF08006B972E /* TheBankApp */,
+				6EE0462324D2EF0D006B972E /* TheBankAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -868,7 +876,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Alzura-CodeTaskTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TheBankAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -898,15 +906,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Alzura-CodeTask/Pods-Alzura-CodeTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheBankApp/Pods-TheBankApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Alzura-CodeTask/Pods-Alzura-CodeTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheBankApp/Pods-TheBankApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alzura-CodeTask/Pods-Alzura-CodeTask-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheBankApp/Pods-TheBankApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDD00019B60070AB3C6CA756 /* [CP] Check Pods Manifest.lock */ = {
@@ -924,7 +932,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Alzura-CodeTask-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TheBankApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -937,15 +945,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Alzura-CodeTaskTests/Pods-Alzura-CodeTaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheBankAppTests/Pods-TheBankAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Alzura-CodeTaskTests/Pods-Alzura-CodeTaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheBankAppTests/Pods-TheBankAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alzura-CodeTaskTests/Pods-Alzura-CodeTaskTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheBankAppTests/Pods-TheBankAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1029,7 +1037,7 @@
 /* Begin PBXTargetDependency section */
 		6EE0462624D2EF0D006B972E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6EE0460A24D2EF08006B972E /* Alzura-CodeTask */;
+			target = 6EE0460A24D2EF08006B972E /* TheBankApp */;
 			targetProxy = 6EE0462524D2EF0D006B972E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1162,17 +1170,17 @@
 		};
 		6EE0462E24D2EF0D006B972E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B281CBC35F0CB68497AA7890 /* Pods-Alzura-CodeTask.debug.xcconfig */;
+			baseConfigurationReference = 220F004524FBED9499286A33 /* Pods-TheBankApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Alzura-CodeTask/AppStartup/Info.plist";
+				INFOPLIST_FILE = TheBankApp/AppStartup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Alzura-CodeTask";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.TheBankApp;
+				PRODUCT_NAME = TheBankApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1180,17 +1188,17 @@
 		};
 		6EE0462F24D2EF0D006B972E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A7D9A25E32CE4CEECB29FAD /* Pods-Alzura-CodeTask.release.xcconfig */;
+			baseConfigurationReference = 8B6CCD18A6399F08A2B990D9 /* Pods-TheBankApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Alzura-CodeTask/AppStartup/Info.plist";
+				INFOPLIST_FILE = TheBankApp/AppStartup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Alzura-CodeTask";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.TheBankApp;
+				PRODUCT_NAME = TheBankApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1198,13 +1206,13 @@
 		};
 		6EE0463124D2EF0D006B972E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D482353EA93C1630C5DC61DA /* Pods-Alzura-CodeTaskTests.debug.xcconfig */;
+			baseConfigurationReference = 261DC03D97112E446A2831D0 /* Pods-TheBankAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Alzura-CodeTaskTests/Info.plist";
+				INFOPLIST_FILE = TheBankAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1213,23 +1221,23 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Alzura-CodeTaskTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Alzura-CodeTaskTests/Validation/Mocks/MockService/Alzura-CodeTaskTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheBankAppTests/Validation/Mocks/MockService/Alzura-CodeTaskTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alzura-CodeTask.app/Alzura-CodeTask";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBankApp.app/TheBankApp";
 			};
 			name = Debug;
 		};
 		6EE0463224D2EF0D006B972E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80219C7745207C2680E384AD /* Pods-Alzura-CodeTaskTests.release.xcconfig */;
+			baseConfigurationReference = 6F99B95020337EC758340D13 /* Pods-TheBankAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Alzura-CodeTaskTests/Info.plist";
+				INFOPLIST_FILE = TheBankAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1238,17 +1246,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Alzura-CodeTaskTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Alzura-CodeTaskTests/Validation/Mocks/MockService/Alzura-CodeTaskTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheBankAppTests/Validation/Mocks/MockService/Alzura-CodeTaskTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alzura-CodeTask.app/Alzura-CodeTask";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBankApp.app/TheBankApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6EE0460624D2EF08006B972E /* Build configuration list for PBXProject "Alzura-CodeTask" */ = {
+		6EE0460624D2EF08006B972E /* Build configuration list for PBXProject "TheBankApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6EE0462B24D2EF0D006B972E /* Debug */,
@@ -1257,7 +1265,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EE0462D24D2EF0D006B972E /* Build configuration list for PBXNativeTarget "Alzura-CodeTask" */ = {
+		6EE0462D24D2EF0D006B972E /* Build configuration list for PBXNativeTarget "TheBankApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6EE0462E24D2EF0D006B972E /* Debug */,
@@ -1266,7 +1274,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EE0463024D2EF0D006B972E /* Build configuration list for PBXNativeTarget "Alzura-CodeTaskTests" */ = {
+		6EE0463024D2EF0D006B972E /* Build configuration list for PBXNativeTarget "TheBankAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6EE0463124D2EF0D006B972E /* Debug */,

@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Alzura-CodeTask' do
+target 'TheBankApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -16,7 +16,7 @@ target 'Alzura-CodeTask' do
    pod 'Swinject'
    pod 'SwinjectAutoregistration'
 
-  target 'Alzura-CodeTaskTests' do
+  target 'TheBankAppTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'RxTest'
