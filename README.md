@@ -1,4 +1,4 @@
-# Alzura-CodeTask
+# TheBankApp
 
 ## Prereqs
 
